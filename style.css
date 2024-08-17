@@ -1,0 +1,287 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+
+:root{
+    --text-color:#e2e8f0;
+    --background-color:#0f172a;
+}
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: var(--background-color) !important;
+    font-family: 'Inter', sans-serif;
+}
+
+header{
+    color: #e2e8f0;
+    background-color: #6366f1 !important;
+    text-align: center;
+    padding: 2.5rem 0;
+}
+
+header h1{
+    font-size: 2.5rem;
+    color: #ffffff;
+    margin-bottom: 1rem;
+    font-weight: 700;
+}
+
+h2, h3, h4 {
+    margin-top: 2rem !important;
+    color: #a5b4fc !important;
+    font-weight: bold;
+}
+
+h2{
+    font-size: 1.5rem !important;
+}
+
+h3{
+    font-size: 1.17rem !important;
+}
+
+
+nav ul{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    background-color:#1e293b;
+    padding: 2rem 0;
+    gap: 25px;
+}
+
+ul li a{
+    color: var(--text-color);
+    text-decoration: none;
+    font-size: 16px;
+    font-weight: 500;
+}
+.parent{
+    background-color: var(--background-color);
+    height: 100vw;
+    width: 100vw;
+}
+.center-div {
+    width: 50vw;  
+    margin: 0 auto; 
+    border: 1px solid #e2e8f0;
+    color: var(--text-color);
+    padding: 2rem;
+    background-color: #1e293b;
+    border-radius: 10px;
+    line-height: 1.5;
+    font-size: 17px;
+    display: block;
+}
+#overview{
+   margin-top: 2rem;
+   margin-bottom: 5px;
+   padding-top: 3rem;
+}
+
+#authentication{
+    margin-top: 2.5rem;
+    padding-top: 2.5rem;
+}
+
+#code{
+    width: 100%;
+  padding: 15px !important;
+  border: 1px solid #334155;
+}
+
+code{
+    padding: 16px;
+    border-radius: 10px;
+    color: var(--text-color) !important;
+    font-weight: 500;
+    border: 1px solid #334155;
+}
+
+#gen-api{
+    width: 100%;
+    border: 1px solid #334155;
+    height: 35px !important;
+    border-radius: 5px;
+}
+
+.generate-api{
+    padding: 5px 20px;
+    border-radius: 5px;
+    background-color: #22d3ee;
+    font-weight: 600;
+    margin-bottom: 10px;
+}
+
+#endpoint{
+    margin-top: 2.5rem;
+}
+
+#endpoint h4{
+    font-size: 1.12rem;
+}
+
+span.post-method{
+    border: 1px solid #334155;
+    background-color: #22d3ee;
+    color: #000;
+    padding: 0.15rem 0.6rem;
+    border-radius: 4px;
+    font-weight: bold;
+    margin-right: 0.5rem;
+}
+
+span.get-method{
+    margin-top: 5px;
+    border: 1px solid #334155;
+    background-color: #6366f1;
+    color: var(--text-color);
+    padding: 0.5rem 1rem;
+    border-radius: 4px;
+    font-weight: bold;
+    margin-right: 0.5rem;
+}
+
+#endpoint table{
+    background-color:#1e293b;
+}
+
+#response{
+    width: 100%;
+    border: 1px solid #334155;
+}
+
+#tutorial{
+    margin-top: 2.5rem;
+    padding-top: 2.5rem;
+}
+
+#tutorial h2,h3{
+    font-weight: bold;
+}
+
+#tutorial p{
+    font-weight: 500;
+}
+
+#code-examples{
+    margin-top: 2.5rem;
+}
+
+#code-examples h2,h3{
+    font-weight: 600;
+}
+
+#python-code, #nodejs{
+    width: 100%;
+    border: 1px solid #334155;
+}
+
+#api-pricing{
+    margin-top: 2.5rem;
+    margin-bottom: 2.5rem;
+}
+
+ #table-1 , #table-2{
+    background-color:#1e293b !important;
+    border: 1px solid #334155;
+    width: 100%;
+    padding: 10px;
+    border-radius: 5px;
+    height: 10vw;
+}
+
+.aqua{
+    color: #22d3ee;
+}
+
+th{
+    background-color: #6366f1;
+}
+/* Responsive CSS */
+
+/* For tablets and medium screens */
+@media (max-width: 768px) {
+    .center-div {
+        max-width: 90%; /* Set a maximum width for better visibility on medium screens */
+        padding: 1.5rem; /* Less padding on smaller screens */
+    }
+
+    header h1 {
+        font-size: 2rem; /* Smaller font size for header */
+    }
+
+    nav ul {
+        flex-direction: column; /* Stack navigation items vertically */
+        gap: 10px;
+        padding: 1rem 0;
+    }
+
+    ul li a {
+        font-size: 14px;
+    }
+
+    table {
+        width: 100%; /* Ensure table takes full width */
+        font-size: 0.9rem; /* Slightly smaller text for table */
+    }
+
+    .generate-api {
+        font-size: 14px; /* Adjust button text size */
+        padding: 10px; /* Adjust padding */
+    }
+
+    table th, table td {
+        padding: 8px; /* Less padding inside table cells */
+        width: 25%; /* Ensure cells take proportional width */
+    }
+}
+
+/* For mobile and small screens */
+@media (max-width: 480px) {
+    header h1 {
+        font-size: 1.5rem; /* Further reduce font size */
+    }
+
+    .center-div {
+        max-width: 100%; /* Full width on very small screens */
+        padding: 1rem;
+    }
+
+    table {
+        width: 100%; /* Ensure table takes full width */
+        font-size: 0.8rem; /* Smaller font size for table */
+    }
+
+    nav ul {
+        gap: 5px;
+    }
+
+    ul li a {
+        font-size: 12px;
+    }
+
+    .generate-api {
+        font-size: 12px;
+        padding: 8px;
+    }
+
+    table th, table td {
+        padding: 6px;
+        width: 25%; /* Ensure cells take proportional width */
+    }
+
+    table th, table td {
+        display: block; /* Stack table cells vertically for smaller screens */
+        width: 100%; /* Make table cells take full width */
+    }
+}
+
+th{
+    background: #6366f1;
+}
