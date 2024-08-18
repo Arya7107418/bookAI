@@ -108,15 +108,26 @@ code{
     border: 1px solid #334155;
     height: 35px !important;
     border-radius: 5px;
-}
-
-.generate-api{
     padding: 5px 20px;
     border-radius: 5px;
-    background-color: #22d3ee;
     font-weight: 600;
     margin-bottom: 10px;
+    cursor: pointer;
+    transition: background-color 0.3s ease; /* Smooth transition for hover and click effects */
+    }
+    
+.generate-api:hover {
+        background-color: #0ea5e9; /* Slightly darker shade for hover effect */
 }
+    
+.generate-api {
+        background-color: #22d3ee;
+        padding: 7px 20px;
+        font-weight: 600;
+        font-size:1rem;
+        margin: 15px auto;
+ }
+    
 
 #endpoint{
     margin-top: 2.5rem;
