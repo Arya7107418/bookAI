@@ -1,3 +1,8 @@
+function toggleMenu(){
+    const menu = document.querySelector(".menu-links");
+    menu.classList.toggle("open");
+}
+
 document.addEventListener('DOMContentLoaded', function () {
     // Smooth scrolling for navigation links
     document.querySelectorAll('nav ul li a').forEach(anchor => {
