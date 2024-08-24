@@ -1,7 +1,3 @@
-function toggleMenu(){
-    const menu = document.querySelector("ul");
-    menu.tagName.toggle("open");
-}
 
 document.addEventListener('DOMContentLoaded', function () {
     // Smooth scrolling for navigation links
