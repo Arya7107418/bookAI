@@ -1,6 +1,6 @@
 function toggleMenu(){
-    const menu = document.querySelector(".menu-links");
-    menu.classList.toggle("open");
+    const menu = document.querySelector("ul");
+    menu.tagName.toggle("open");
 }
 
 document.addEventListener('DOMContentLoaded', function () {
